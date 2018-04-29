@@ -1,13 +1,13 @@
 Given(/^I land on help popup$/) do
-  puts ("User lands on Help popup")
+  text("Help")
 end
 
 When(/^I click on Got it button$/) do
-  puts("User clicks on Got it button")
+  find_element(id:"button1").click
 end
 
 Then(/^I land on Area screen$/) do
-  puts ("User lands on Area screen")
+  text("Area")
 end
 
 When(/^I click on Swap button$/) do
@@ -17,6 +17,7 @@ end
 Then(/^I see "([^"]*)" in From header$/) do |value|
   puts("From header values is " + value)
 end
+
 
 And(/^I see "([^"]*)" in To header$/) do |value|
   puts("To header values is #{value}")

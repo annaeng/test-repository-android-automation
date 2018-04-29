@@ -2,7 +2,7 @@ require "appium_lib"
 
 def caps
   {caps:{
-      deviceName: "Name",
+      deviceName: "Name1",
       platformName: "Android",
       app:(File.join(File.dirname(__FILE__),"ultimate_converter.apk")),
       appPackage: "com.physphil.android.unitconverterultimate",
@@ -13,3 +13,4 @@ end
 
 Appium::Driver.new(caps, true)
 Appium.promote_appium_methods Object
+
